@@ -17,7 +17,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://graph.org/file/269466bc8b873a632f721.jpg https://graph.org/file/8dba505339ad826052f87.jpg https://graph.org/file/f8a2001ddc5db3c4e7253.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/fcdcfa0598253cccf98e7.jpg')).split()
 
 
 # Admins & Users
@@ -59,8 +59,8 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://heyme106:4dVEjnIWMiaGTEWK@heyme106.479c2kr.mongodb.net/?retryWrites=true&w=majority")   # IF Multiple Database Is False Then Fill Only This Database Url.
-DATABASE_NAME = environ.get('DATABASE_NAME', "heyme106")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://jonnywaker106:ILNBc1XpXyEbRAuo@jonny106.yw5xtr0.mongodb.net/?retryWrites=true&w=majority")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_NAME = environ.get('DATABASE_NAME', "jonny106")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
@@ -133,7 +133,7 @@ TUTORIAL = environ.get('TUTORIAL', '') # How Open Shortner Link Video Link , Cha
 
 # Others
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
-MAX_B_TN = environ.get("MAX_B_TN", "5")
+MAX_B_TN = environ.get("MAX_B_TN", "50")
 PORT = environ.get("PORT", "8080")
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends ❤️')
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
